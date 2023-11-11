@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iNTIiIHZpZXdCb3g9IjAgMCA0NiA1MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ1LjgyNzMgMjQuMzY1NEM0NS41Mzk1IDIzLjQyMzEgNDQuOTI0NyAyMi42NTM4IDQ0LjE1NTUgMjIuMTM0Nkw0NC4xMzQ2IDIyLjA5NjJMNi4wOTYwNCAwLjUxOTIzM0M2LjA5NjA0IDAuNTE5MjMzIDYuMDk2MDMgMC41MTkyMzMgNi4wNzc3MiAwLjUzODQ2M0M2LjAyMDE2IDAuNTE5MjMzIDUuOTgwOTIgMC40ODA3NzEgNS45MjMzNiAwLjQ2MTU0MUM1Ljg2NTggMC40NDIzMDggNS44MjY1NiAwLjQwMzg0OCA1Ljc2OSAwLjM4NDYxNkM1LjcxMTQ0IDAuMzY1Mzg2IDUuNjc0ODIgMC4zNDYxNTYgNS42MTcyNiAwLjMyNjkyNEM1LjUyMDQ2IDAuMjg4NDY0IDUuNDIzNjQgMC4yNTAwMDEgNS4zNDc3NyAwLjIzMDc2OUM1LjMwODUyIDAuMjExNTM5IDUuMjY5MjkgMC4yMTE1MzkgNS4yMTE3NCAwLjE5MjMwOUM1LjEzNTg2IDAuMTczMDc3IDUuMDM5MDYgMC4xNTM4NDcgNC45NjMxOCAwLjEzNDYxN0M0LjkyMzk0IDAuMTM0NjE3IDQuOTA1NjMgMC4xMTUzODQgNC44ODQ3IDAuMTE1Mzg0QzQuNzY5NTggMC4wOTYxNTQ1IDQuNjU0NDUgMC4wNzY5MjQ3IDQuNTM5MzMgMC4wNTc2OTIyQzQuNTAwMDkgMC4wNTc2OTIyIDQuNDgxNzcgMC4wNTc2OTIyIDQuNDQyNTIgMC4wNTc2OTIyQzQuMzI3NDEgLTUuODQ3OTFlLTA4IDQuMjEyMjkgMCA0LjA3ODg2IDBDMy40NDMwOSAwIDIuODI4MjcgMC4xNTM4NDcgMi4yODkzMSAwLjQwMzg0OEwxNi44Njc0IDI1LjU1NzdMMTYuODg1NyAyNS41NzdMNDYgMjUuNTU3N0M0NiAyNS4zNjU0IDQ1Ljk4MTcgMjUuMTkyNCA0NS45NjMzIDI1LjAwMDFDNDUuOTI0MSAyNC44MDc4IDQ1LjkwNTggMjQuNTc2OSA0NS44MjczIDI0LjM2NTRaIiBmaWxsPSIjQjcwRjJGIi8+CjxwYXRoIGQ9Ik0yLjI4OTI3IDAuNDI0MTQ5QzEuMjI5NjcgMC45NDMzNzkgMC40MjM4MzkgMS45MDQ5MyAwLjExNTExNCAzLjA3ODAxQzAuMTE1MTE0IDMuMDk3MjQgMC4xMTUxMTQgMy4wOTcyNCAwLjExNTExNCAzLjExNjQ3QzAuMDc1ODY5NiAzLjI1MTA3IDAuMDU3NTU3MiAzLjM4NTY4IDAuMDM5MjQzMSAzLjUzOTUyQzAuMDM5MjQzMSAzLjU1ODc1IDAuMDM5MjQzMSAzLjU3Nzk4IDAuMDM5MjQzMSAzLjU5NzI0QzAuMDE4MzEyNiAzLjc1MTA4IDAgMy45MDQ5MiAwIDQuMDc3OThWNDcuMTE2M0MwIDQ3LjI3MDQgMC4wMTgzMTI2IDQ3LjQ0MzQgMC4wMzkyNDMxIDQ3LjU5NzJDMC4wMzkyNDMxIDQ3LjU5NzIgMC4wMzkyNDMxIDQ3LjU5NzIgMC4wMzkyNDMxIDQ3LjYxNjZDMC4yMTE5MiA0OC44NjY0IDAuOTYwMTg2IDQ5Ljk0MzMgMS45OTg4NiA1MC41NzhMMTYuOTIyMyAyNS42MTY1TDIuMjg5MjcgMC40MjQxNDlaIiBmaWxsPSIjRUY1NDYzIi8+CjxwYXRoIGQ9Ik00NS45NjMzIDI2LjExNzhDNDUuOTYzMyAyNi4wOTg3IDQ1Ljk4MTYgMjYuMDYgNDUuOTgxNiAyNi4wNDA5QzQ1Ljk5OTkgMjUuODg3MSA0NS45OTk5IDI1LjczMzIgNDUuOTk5OSAyNS41Nzk0VjI1LjU2TDE2Ljc4ODkgMjUuNTc5NEwxLjk2MjIgNTAuNTIxN0MyLjEzNDg4IDUwLjYxNzggMi4zMDc1NSA1MC43MTQgMi40ODAyMyA1MC43OTFDMi41MDExNiA1MC43OTEgMi41MTk0OCA1MC44MSAyLjUzNzggNTAuODFDMi42MTYyOCA1MC44Mjk0IDIuNjczODUgNTAuODY3OSAyLjc0OTcyIDUwLjg4N0MyLjgwNzI4IDUwLjkwNjMgMi44NDY1MiA1MC45MjU0IDIuOTA0MDggNTAuOTQ0OEMyLjk4MjU3IDUwLjk2MzkgMy4wNTg0MyA1MC45ODMyIDMuMTM0MzEgNTEuMDAyM0MzLjE5MTg2IDUxLjAyMTcgMy4yMzExMiA1MS4wMjE3IDMuMjg4NjggNTEuMDQwOEMzLjM4NTQ5IDUxLjA2MDIgMy40NjEzNSA1MS4wNzkzIDMuNTU4MTUgNTEuMDc5M0MzLjU5NzQgNTEuMDc5MyAzLjYzNDAzIDUxLjA5ODYgMy42OTQyMSA1MS4wOTg2QzMuODI3NjQgNTEuMTE3NyAzLjk2MTA3IDUxLjExNzcgNC4wOTcxMiA1MS4xMTc3QzQuMjEyMjQgNTEuMTE3NyA0LjM0NTY3IDUxLjExNzcgNC40NjM0IDUxLjA5ODZDNC41MDAwMyA1MS4wOTg2IDQuNTM5MjcgNTEuMDk4NiA0LjU3ODUxIDUxLjA3OTNDNC42NzI3IDUxLjA2MDIgNC43NTExOSA1MS4wNjAyIDQuODI3MDcgNTEuMDQwOEM0Ljg2NjMxIDUxLjA0MDggNC45MjM4OCA1MS4wMjE3IDQuOTYzMTIgNTEuMDIxN0M1LjA1NzMxIDUxLjAwMjMgNS4xMzU3OSA1MC45ODMyIDUuMjMyNTkgNTAuOTQ0OEM1LjI5MDE1IDUwLjkyNTQgNS4zNjYwMiA1MC45MDYzIDUuNDIzNTggNTAuODg3QzUuNDYyODIgNTAuODY3OSA1LjQ4MTE0IDUwLjg2NzkgNS41MjAzOSA1MC44NDg1QzUuNzY4OTQgNTAuNzUyNSA2LjAwMTc5IDUwLjYzNzEgNi4yMTEwOSA1MC41MDI0TDQzLjU3NzIgMjkuMzEwM0M0NC44NDYyIDI4Ljc3MTYgNDUuNzY5NyAyNy41NjAyIDQ1Ljk2MzMgMjYuMTE3OFoiIGZpbGw9IiNFNTIwM0QiLz4KPC9zdmc+Cg=="
+        data-gatsby-head="true">
+    <title>Kadea Essaie1</title>
+</head>
+
+<body>
+    <!--section header-->
+    <header id="contener_background_header">
+        <div id="contener_flex_header">
+            <div id="header_logo">
+                <img id="header_size_logo"
+                    src="https://online.kadea.co/static/kadea-learn-dark-553310cb22dca7f36bf81787fa1a899e.svg"
+                    alt="Logo KADEA">
+            </div>
+            <nav id="header_flex_nav">
+                <a class="nav_link weight_link color_text_one" href="https://online.kadea.co/">Accueil</a>
+                <a class="nav_link weight_link color_text_one" href="https://online.kadea.co/courses">Cours</a>
+                <a class="nav_link weight_link color_text_one" href="https://online.kadea.co/learning-path">Parcours</a>
+                <a class="nav_link weight_link color_text_one" href="https://online.kadea.co/dashboard">Académie</a>
+                <a class="nav_link weight_link color_text_one" href="https://online.kadea.co/settings">Tableau
+                    de bord</a>
+                <a class="nav_link weight_link color_text_one" href="https://www.kinshasadigital.academy/">Profil</a>
+                <a class="nav_button_link weight_link color_text_one"
+                    href="https://learn-api.kadea.co/signout">Déconnexion</a>
+            </nav>
+        </div>
+    </header>
+    <!--section 1-->
+    <section id="contener_background_section1">
+        <section id="contener_flex_section1">
+            <div class="section1_part1_size_text">
+                <h1 class="section1_title1 color_text_one">Apprends <span class="color_text_two">GRATUITEMENT EN
+                        LIGNE</span> et
+                    augmente
+                    tes chances de rejoindre
+                    la <span class="color_text_two">MEILLEURE</span> école de code.</h1>
+                <p class="section1_paragraph color_text_one">Concentre-toi sur ce qui est nécessaire pour acquérir une
+                    compétence
+                    spécifique et applicable. Tu
+                    seras mieux outillé pour construire une carrière.</p>
+                <a href="https://online.kadea.co/learn/responsive-web-design/"
+                    class="section1_button_link weight_link color_text_one">Lance-toi</a>
+            </div>
+            <div class="section1_part2">
+                <img class="section1_part2_size_img"
+                    src="https://online.kadea.co/static/hero-img-444ab44112fd7c71a5fd876dd687699a.png"
+                    alt="Image des developpeurs">
+            </div>
+        </section>
+    </section>
+    <!--section 2-->
+    <section id="contener_background_section2">
+        <section id="contener_flex_section2">
+            <div>
+                <img src="data:image/png;base64,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"
+                    alt="Logo Vodacom">
+            </div>
+            <div>
+                <p class="section2_paragraph color_text_one">
+                    Programme en
+                    <br>partenariat avec
+                    <br><span class="weight_text" id="size_specific_text_vodacom">vodacom</span>
+                    <br><span class="weight_text">Grâce à son programme ConnectU, Vodacom offre à tous ses
+                        abonnés
+                        le privilège d’accéder
+                        gratuitement au contenu de KADEA ONLINE sans forfait internet.</span>
+                </p>
+            </div>
+        </section>
+    </section>
+    <!--section 3-->
+    <section id="contener_background_section3">
+        <section id="contener_flex_section3" class="color_text_one">
+            <div>
+                <h2 class="section3_title2">Inscris-toi à KADEA ACADEMY, <br> formation qui change une vie.</h2>
+                <p class="section3_paragraph">Deviens Développeur.se ou Specialiste en Marketing Digital en 6 mois ou 12
+                    mois de
+                    formation
+                    certifiante suivi de 3 à 6 mois de stage, et trouve un emploi dans les meilleurs entreprises
+                    nationales et internationales. </p>
+                <a href="https://www.kinshasadigital.academy/inscription" id="section3_button_link"
+                    class="weight_link color_text_two">Rejoins notre académie</a>
+            </div>
+        </section>
+    </section>
+    <!-- section 4 -->
+    <!-- <section id="contener_background_section4">
+        <section id="contener_flex_section4">
+            <div>
+                <div>
+                    <p>
+                        Cours
+                    </p>
+                </div>
+                <div>
+                    <img src="https://online.kadea.co/static/we-act-logo-9dabdd78f824af8ae636de149d344c15.png"
+                        alt="We act class of 2023">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE4IiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDExOCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMTEuNzUgMEg1Ljc1QzIuNTggMCAwIDIuNTggMCA1Ljc1Vjc5Ljc1QzAgODIuOTIgMi41OCA4NS41IDUuNzUgODUuNUg0NVY5NkgzNC44MUMzMy44NCA5NiAzMy4wNiA5Ni43OCAzMy4wNiA5Ny43NUMzMy4wNiA5OC43MiAzMy44NCA5OS41IDM0LjgxIDk5LjVIOTcuNzVDMTAwLjM3IDk5LjUgMTAyLjUgOTcuMzcgMTAyLjUgOTQuNzVWODUuNUgxMTEuNzVDMTE0LjkyIDg1LjUgMTE3LjUgODIuOTIgMTE3LjUgNzkuNzVWNS43NUMxMTcuNSAyLjU4IDExNC45MiAwIDExMS43NSAwWk00OC41IDg1LjVINjlWOTQuNzVDNjkgOTUuMTkgNjkuMDggOTUuNiA2OS4xOSA5Nkg0OC41Vjg1LjVaTTYwIDY4SDIzLjVWNDcuNjhINjBWNjhaTTYxLjc1IDQ0LjE4SDIxLjc1QzIwLjc4IDQ0LjE4IDIwIDQ0Ljk2IDIwIDQ1LjkzVjY4SDkuNVY5LjVIMTA4VjY4SDEwMi41VjQ4LjkzQzEwMi41IDQ2LjMxIDEwMC4zNyA0NC4xOCA5Ny43NSA0NC4xOEg3My43NUM3MS4xMyA0NC4xOCA2OSA0Ni4zMSA2OSA0OC45M1Y2OEg2My41VjQ1LjkzQzYzLjUgNDQuOTYgNjIuNzIgNDQuMTggNjEuNzUgNDQuMThaTTkwLjIxIDQ3LjY4TDkwLjA2IDQ5LjQzSDgxLjQ1TDgxLjMgNDcuNjhIOTAuMjFaTTk5IDk0Ljc1Qzk5IDk1LjQ0IDk4LjQ0IDk2IDk3Ljc1IDk2SDczLjc1QzczLjA2IDk2IDcyLjUgOTUuNDQgNzIuNSA5NC43NVY0OC45M0M3Mi41IDQ4LjI0IDczLjA2IDQ3LjY4IDczLjc1IDQ3LjY4SDc3Ljc4TDc4LjEgNTEuMzNDNzguMTggNTIuMjMgNzguOTQgNTIuOTMgNzkuODQgNTIuOTNIOTEuNjZDOTIuNTcgNTIuOTMgOTMuMzMgNTIuMjQgOTMuNCA1MS4zM0w5My43MiA0Ny42OEg5Ny43NUM5OC40NCA0Ny42OCA5OSA0OC4yNCA5OSA0OC45M1Y5NC43NVpNMTE0IDc5Ljc1QzExNCA4MC45OSAxMTIuOTkgODIgMTExLjc1IDgySDEwMi41VjcxLjVIMTA5Ljc1QzExMC43MiA3MS41IDExMS41IDcwLjcyIDExMS41IDY5Ljc1VjcuNzVDMTExLjUgNi43OCAxMTAuNzIgNiAxMDkuNzUgNkg3Ljc1QzYuNzggNiA2IDYuNzggNiA3Ljc1VjY5Ljc1QzYgNzAuNzIgNi43OCA3MS41IDcuNzUgNzEuNUg2OVY4Mkg1Ljc1QzQuNTEgODIgMy41IDgwLjk5IDMuNSA3OS43NVY1Ljc1QzMuNSA0LjUxIDQuNTEgMy41IDUuNzUgMy41SDExMS43NUMxMTIuOTkgMy41IDExNCA0LjUxIDExNCA1Ljc1Vjc5Ljc1WiIgZmlsbD0iI0U2MDAwMCIvPgo8cGF0aCBkPSJNODguMzI5OSA5MC41SDgzLjE2OTlDODIuMTk5OSA5MC41IDgxLjQxOTkgOTEuMjggODEuNDE5OSA5Mi4yNUM4MS40MTk5IDkzLjIyIDgyLjE5OTkgOTQgODMuMTY5OSA5NEg4OC4zMjk5Qzg5LjI5OTkgOTQgOTAuMDc5OSA5My4yMiA5MC4wNzk5IDkyLjI1QzkwLjA3OTkgOTEuMjggODkuMjk5OSA5MC41IDg4LjMyOTkgOTAuNVoiIGZpbGw9IiNFNjAwMDAiLz4KPHBhdGggZD0iTTk3LjUgMzYuOTNWMjEuNzVDOTcuNSAyMC43OCA5Ni43MiAyMCA5NS43NSAyMEgyMS43NUMyMC43OCAyMCAyMCAyMC43OCAyMCAyMS43NVYzNi45M0MyMCAzNy45IDIwLjc4IDM4LjY4IDIxLjc1IDM4LjY4SDk1Ljc1Qzk2LjcyIDM4LjY4IDk3LjUgMzcuODkgOTcuNSAzNi45M1pNOTQgMzUuMThIMjMuNVYyMy41SDk0VjM1LjE4WiIgZmlsbD0iI0U2MDAwMCIvPgo8cGF0aCBkPSJNOTQuMjUgNTUuOTI5OUg3Ny4yNUM3Ni4yOCA1NS45Mjk5IDc1LjUgNTYuNzA5OSA3NS41IDU3LjY3OTlWNjUuNjc5OUM3NS41IDY2LjY0OTkgNzYuMjggNjcuNDI5OSA3Ny4yNSA2Ny40Mjk5SDk0LjI1Qzk1LjIyIDY3LjQyOTkgOTYgNjYuNjQ5OSA5NiA2NS42Nzk5VjU3LjY3OTlDOTYgNTYuNzA5OSA5NS4yMiA1NS45Mjk5IDk0LjI1IDU1LjkyOTlaTTkyLjUgNjMuOTI5OUg3OVY1OS40Mjk5SDkyLjVWNjMuOTI5OVoiIGZpbGw9IiNFNjAwMDAiLz4KPHBhdGggZD0iTTk0LjI1IDcwLjQyOTlINzcuMjVDNzYuMjggNzAuNDI5OSA3NS41IDcxLjIwOTkgNzUuNSA3Mi4xNzk5Vjg1Ljc0OTlDNzUuNSA4Ni43MTk5IDc2LjI4IDg3LjQ5OTkgNzcuMjUgODcuNDk5OUg5NC4yNUM5NS4yMiA4Ny40OTk5IDk2IDg2LjcxOTkgOTYgODUuNzQ5OVY3Mi4xNzk5Qzk2IDcxLjIwOTkgOTUuMjIgNzAuNDI5OSA5NC4yNSA3MC40Mjk5Wk05Mi41IDgzLjk5OTlINzlWNzMuOTI5OUg5Mi41VjgzLjk5OTlaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K"
+                        alt="Ecran d'ordinateur et smartphone">
+                </div>
+                <div>
+                    <h4>
+                        Responsive Web Design
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        Dans ce cours, tu apprendras les langages que les développeurs utilisent pour créer des pages
+                        Web : HTML (Hypertext Markup Language) pour le contenu, et CSS (Cascading Style Sheets) pour la
+                        conception. Enfin, tu apprendras à créer des ...
+                    </p>
+                </div>
+                <div>
+                    <a href="https://online.kadea.co/learn/responsive-web-design/">Suivre le cours</a>
+                    <a href="https://online.kadea.co/learn/responsive-web-design/">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDYiIHZpZXdCb3g9IjAgMCA1NiA0NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC42MDE1NjIiIHk9IjEiIHdpZHRoPSI1NC4xOTI4IiBoZWlnaHQ9IjQ0LjExMDQiIHJ4PSI0IiBzdHJva2U9IiNFMzA2MTMiLz4KPHBhdGggZD0iTTI1LjYwMTYgMzNWMTNMMzUuNjAxNiAyM0wyNS42MDE2IDMzWiIgZmlsbD0iI0UzMDYxMyIvPgo8L3N2Zz4K"
+                            alt="Image video">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Cours
+                    </p>
+                </div>
+                <div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE4IiBoZWlnaHQ9IjExOCIgdmlld0JveD0iMCAwIDExOCAxMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMTEuNzUgMTguMDFIODIuNVYxMy4yNkM4NS4zNyAxMi40OSA4Ny41IDkuODYgODcuNSA2Ljc1Qzg3LjUgMy4wMyA4NC40NyAwIDgwLjc1IDBDNzcuMDMgMCA3NCAzLjAzIDc0IDYuNzVDNzQgOS44NyA3Ni4xMyAxMi40OSA3OSAxMy4yNlYxOC4wMUg2MC41VjEzLjI2QzYzLjM3IDEyLjQ5IDY1LjUgOS44NiA2NS41IDYuNzVDNjUuNSAzLjAzIDYyLjQ3IDAgNTguNzUgMEM1NS4wMyAwIDUyIDMuMDMgNTIgNi43NUM1MiA5Ljg3IDU0LjEzIDEyLjQ5IDU3IDEzLjI2VjE4LjAxSDM4LjVWMTMuMjZDNDEuMzcgMTIuNDkgNDMuNSA5Ljg2IDQzLjUgNi43NUM0My41IDMuMDMgNDAuNDcgMCAzNi43NSAwQzMzLjAzIDAgMzAgMy4wMyAzMCA2Ljc1QzMwIDkuODcgMzIuMTMgMTIuNDkgMzUgMTMuMjZWMTguMDFINS43NUMyLjU4IDE4LjAxIDAgMjAuNTkgMCAyMy43NlY5Ny43NkMwIDEwMC45MyAyLjU4IDEwMy41MSA1Ljc1IDEwMy41MUg0NVYxMTQuMDFIMzQuODFDMzMuODQgMTE0LjAxIDMzLjA2IDExNC43OSAzMy4wNiAxMTUuNzZDMzMuMDYgMTE2LjczIDMzLjg0IDExNy41MSAzNC44MSAxMTcuNTFIODIuNjhDODMuNjUgMTE3LjUxIDg0LjQzIDExNi43MyA4NC40MyAxMTUuNzZDODQuNDMgMTE0Ljc5IDgzLjY1IDExNC4wMSA4Mi42OCAxMTQuMDFINzIuNVYxMDMuNTFIMTExLjc1QzExNC45MiAxMDMuNTEgMTE3LjUgMTAwLjkzIDExNy41IDk3Ljc2VjIzLjc2QzExNy41IDIwLjU5IDExNC45MiAxOC4wMSAxMTEuNzUgMTguMDFaTTc3LjUgNi43NUM3Ny41IDQuOTYgNzguOTYgMy41IDgwLjc1IDMuNUM4Mi41NCAzLjUgODQgNC45NiA4NCA2Ljc1Qzg0IDguNTQgODIuNTQgMTAgODAuNzUgMTBDNzguOTYgMTAgNzcuNSA4LjU0IDc3LjUgNi43NVpNNTUuNSA2Ljc1QzU1LjUgNC45NiA1Ni45NiAzLjUgNTguNzUgMy41QzYwLjU0IDMuNSA2MiA0Ljk2IDYyIDYuNzVDNjIgOC41NCA2MC41NCAxMCA1OC43NSAxMEM1Ni45NiAxMCA1NS41IDguNTQgNTUuNSA2Ljc1Wk0zMy41IDYuNzVDMzMuNSA0Ljk2IDM0Ljk2IDMuNSAzNi43NSAzLjVDMzguNTQgMy41IDQwIDQuOTYgNDAgNi43NUM0MCA4LjU0IDM4LjU0IDEwIDM2Ljc1IDEwQzM0Ljk2IDEwIDMzLjUgOC41NCAzMy41IDYuNzVaTTc5IDIxLjUxVjI0LjAxSDYwLjVWMjEuNTFINzlaTTcyLjU2IDQ0Ljc2TDcwLjQzIDQ3LjQzQzY5Ljk3IDQ4LjAxIDY5LjkyIDQ4LjgyIDcwLjMyIDQ5LjQ1QzcxLjE2IDUwLjc3IDcxLjc1IDUyLjIxIDcyLjA5IDUzLjczQzcyLjI1IDU0LjQ1IDcyLjg1IDU0Ljk5IDczLjU5IDU1LjA4TDc2Ljk5IDU1LjQ5VjU4LjAzTDczLjYgNTguNDJDNzIuODYgNTguNSA3Mi4yNiA1OS4wNSA3Mi4wOSA1OS43N0M3MS43NSA2MS4yOSA3MS4xNSA2Mi43MyA3MC4zMiA2NC4wNUM2OS45MiA2NC42OCA2OS45NiA2NS40OCA3MC40MiA2Ni4wN0w3Mi41NCA2OC43N0w3MC43NCA3MC41N0w2OC4wNyA2OC40NEM2Ny40OSA2Ny45OCA2Ni42NyA2Ny45MyA2Ni4wNSA2OC4zM0M2NC43MyA2OS4xNiA2My4yOSA2OS43NiA2MS43NyA3MC4xQzYxLjA1IDcwLjI2IDYwLjUxIDcwLjg2IDYwLjQyIDcxLjZMNjAuMDEgNzVINTcuNDdMNTcuMDggNzEuNjFDNTcgNzAuODcgNTYuNDUgNzAuMjcgNTUuNzMgNzAuMUM1NC4yMSA2OS43NiA1Mi43NyA2OS4xNiA1MS40NSA2OC4zM0M1MC44MyA2Ny45MyA1MC4wMiA2Ny45NyA0OS40MyA2OC40M0w0Ni43MyA3MC41NUw0NC45MyA2OC43NUw0Ny4wNiA2Ni4wOEM0Ny41MiA2NS41IDQ3LjU3IDY0LjY5IDQ3LjE3IDY0LjA2QzQ2LjM0IDYyLjc0IDQ1Ljc0IDYxLjMgNDUuNCA1OS43OEM0NS4yNCA1OS4wNiA0NC42NCA1OC41MiA0My45IDU4LjQzTDQwLjUgNTguMDJWNTUuNDhMNDMuODkgNTUuMDlDNDQuNjMgNTUuMDEgNDUuMjMgNTQuNDYgNDUuNCA1My43NEM0NS43NCA1Mi4yMiA0Ni4zNCA1MC43OCA0Ny4xNyA0OS40NkM0Ny41NyA0OC44MyA0Ny41MyA0OC4wMyA0Ny4wNyA0Ny40NEw0NC45NSA0NC43NEw0Ni43NSA0Mi45NEw0OS40MiA0NS4wN0M1MCA0NS41MyA1MC44MiA0NS41OCA1MS40NCA0NS4xOEM1Mi43NiA0NC4zNSA1NC4yIDQzLjc1IDU1LjcyIDQzLjQxQzU2LjQ0IDQzLjI1IDU2Ljk4IDQyLjY1IDU3LjA3IDQxLjkxTDU3LjQ4IDM4LjUxSDYwLjAyTDYwLjQxIDQxLjlDNjAuNDkgNDIuNjQgNjEuMDQgNDMuMjQgNjEuNzYgNDMuNDFDNjMuMjggNDMuNzUgNjQuNzIgNDQuMzUgNjYuMDQgNDUuMThDNjYuNjcgNDUuNTggNjcuNDcgNDUuNTQgNjguMDYgNDUuMDhMNzAuNzYgNDIuOTZMNzIuNTYgNDQuNzZaTTU1Ljk0IDM1LjAxQzU1LjA2IDM1LjAxIDU0LjMxIDM1LjY3IDU0LjIgMzYuNTVMNTMuNzQgNDAuMzFDNTIuNjcgNDAuNjMgNTEuNjQgNDEuMDYgNTAuNjYgNDEuNTlMNDcuNyAzOS4yNEM0NyAzOC42OSA0NiAzOC43NCA0NS4zNyAzOS4zN0w0NC42IDQwLjE0TDM4LjQ5IDM0LjAzVjI3LjVINTdWMzVINTUuOTRWMzUuMDFaTTM1LjUxIDM2TDQyLjEzIDQyLjYyTDQxLjM4IDQzLjM3QzQwLjc1IDQ0IDQwLjY5IDQ0Ljk5IDQxLjI0IDQ1LjY5TDQzLjU4IDQ4LjY3QzQzLjA1IDQ5LjY1IDQyLjYzIDUwLjY4IDQyLjMgNTEuNzVMMzguNTQgNTIuMThDMzcuNjYgNTIuMjggMzYuOTkgNTMuMDMgMzYuOTkgNTMuOTJWNTUuMDFIMjkuMjVDMjguNDggNTIuMTQgMjUuODUgNTAuMDEgMjIuNzQgNTAuMDFDMTkuMDIgNTAuMDEgMTUuOTkgNTMuMDQgMTUuOTkgNTYuNzZDMTUuOTkgNjAuNDggMTkuMDIgNjMuNTEgMjIuNzQgNjMuNTFDMjUuODYgNjMuNTEgMjguNDggNjEuMzggMjkuMjUgNTguNTFIMzdWNTkuNTdDMzcgNjAuNDUgMzcuNjYgNjEuMiAzOC41NCA2MS4zMUw0Mi4zIDYxLjc3QzQyLjYyIDYyLjg0IDQzLjA1IDYzLjg3IDQzLjU4IDY0Ljg1TDQxLjIzIDY3LjgxQzQwLjY4IDY4LjUxIDQwLjczIDY5LjUxIDQxLjM2IDcwLjE0TDQ1LjM2IDc0LjE0QzQ1Ljk5IDc0Ljc3IDQ2Ljk4IDc0LjgzIDQ3LjY4IDc0LjI4TDUwLjY2IDcxLjk0QzUxLjY0IDcyLjQ3IDUyLjY3IDcyLjg5IDUzLjc0IDczLjIyTDU0LjE3IDc2Ljk4QzU0LjI3IDc3Ljg2IDU1LjAyIDc4LjUzIDU1LjkxIDc4LjUzSDYxLjU2QzYyLjQ0IDc4LjUzIDYzLjE5IDc3Ljg3IDYzLjMgNzYuOTlMNjMuNzYgNzMuMjNDNjQuODMgNzIuOTEgNjUuODYgNzIuNDggNjYuODQgNzEuOTVMNjkuOCA3NC4zQzcwLjUgNzQuODUgNzEuNSA3NC44IDcyLjEzIDc0LjE3TDc2LjEzIDcwLjE3Qzc2Ljc2IDY5LjU0IDc2LjgyIDY4LjU1IDc2LjI3IDY3Ljg1TDczLjkzIDY0Ljg3Qzc0LjQ2IDYzLjg5IDc0Ljg4IDYyLjg2IDc1LjIxIDYxLjc5TDc4Ljk3IDYxLjM2Qzc5Ljg1IDYxLjI2IDgwLjUyIDYwLjUxIDgwLjUyIDU5LjYyVjU4LjUzSDg4LjI2Qzg5LjAzIDYxLjQgOTEuNjYgNjMuNTMgOTQuNzcgNjMuNTNDOTguNDkgNjMuNTMgMTAxLjUyIDYwLjUgMTAxLjUyIDU2Ljc4QzEwMS41MiA1My4wNiA5OC40OSA1MC4wMyA5NC43NyA1MC4wM0M5MS42NSA1MC4wMyA4OS4wMyA1Mi4xNiA4OC4yNiA1NS4wM0g4MC41MlY1My45N0M4MC41MiA1My4wOCA3OS44NiA1Mi4zNCA3OC45OCA1Mi4yM0w3NS4yMiA1MS43OEM3NC45IDUwLjcxIDc0LjQ3IDQ5LjY4IDczLjk0IDQ4LjdMNzYuMjkgNDUuNzRDNzYuODQgNDUuMDQgNzYuNzkgNDQuMDQgNzYuMTYgNDMuNDFMNzUuMzkgNDIuNjRMODIuMDEgMzYuMDJDODIuMzQgMzUuNjkgODIuNTIgMzUuMjUgODIuNTIgMzQuNzhWMjcuNTNIMTA4Vjg2LjAzSDkuNVYyNy41M0gzNVYzNC43OEMzNSAzNS4yMyAzNS4xOCAzNS42NyAzNS41MSAzNlpNMjYgNTYuNzZDMjYgNTguNTUgMjQuNTQgNjAuMDEgMjIuNzUgNjAuMDFDMjAuOTYgNjAuMDEgMTkuNSA1OC41NSAxOS41IDU2Ljc2QzE5LjUgNTQuOTcgMjAuOTYgNTMuNTEgMjIuNzUgNTMuNTFDMjQuNTQgNTMuNTEgMjYgNTQuOTcgMjYgNTYuNzZaTTkxLjUgNTYuNzZDOTEuNSA1NC45NyA5Mi45NiA1My41MSA5NC43NSA1My41MUM5Ni41NCA1My41MSA5OCA1NC45NyA5OCA1Ni43NkM5OCA1OC41NSA5Ni41NCA2MC4wMSA5NC43NSA2MC4wMUM5Mi45NiA2MC4wMSA5MS41IDU4LjU1IDkxLjUgNTYuNzZaTTc5IDM0LjA0TDcyLjg5IDQwLjE1TDcyLjE0IDM5LjRDNzEuNTEgMzguNzcgNzAuNTIgMzguNzEgNjkuODIgMzkuMjZMNjYuODQgNDEuNkM2NS44NiA0MS4wNyA2NC44MyA0MC42NSA2My43NiA0MC4zMkw2My4zMyAzNi41NkM2My4yMyAzNS42OCA2Mi40OCAzNS4wMSA2MS41OSAzNS4wMUg2MC41VjI3LjUxSDc5VjM0LjA0Wk01NyAyMS41MVYyNC4wMUgzOC41VjIxLjUxSDU3Wk02OSAxMTQuMDFINDguNVYxMDMuNTFINjlWMTE0LjAxWk0xMTQgOTcuNzZDMTE0IDk5IDExMi45OSAxMDAuMDEgMTExLjc1IDEwMC4wMUg1Ljc1QzQuNTEgMTAwLjAxIDMuNSA5OSAzLjUgOTcuNzZWMjMuNzZDMy41IDIyLjUyIDQuNTEgMjEuNTEgNS43NSAyMS41MUgzNVYyNC4wMUg3Ljc1QzYuNzggMjQuMDEgNiAyNC43OSA2IDI1Ljc2Vjg3Ljc2QzYgODguNzMgNi43OCA4OS41MSA3Ljc1IDg5LjUxSDEwOS43NUMxMTAuNzIgODkuNTEgMTExLjUgODguNzMgMTExLjUgODcuNzZWMjUuNzZDMTExLjUgMjQuNzkgMTEwLjcyIDI0LjAxIDEwOS43NSAyNC4wMUg4Mi41VjIxLjUxSDExMS43NUMxMTIuOTkgMjEuNTEgMTE0IDIyLjUyIDExNCAyMy43NlY5Ny43NloiIGZpbGw9IiNFNjAwMDAiLz4KPHBhdGggZD0iTTU4Ljc1IDQ3LjAxQzUzLjM3IDQ3LjAxIDQ5IDUxLjM4IDQ5IDU2Ljc2QzQ5IDYyLjE0IDUzLjM3IDY2LjUxIDU4Ljc1IDY2LjUxQzY0LjEzIDY2LjUxIDY4LjUgNjIuMTQgNjguNSA1Ni43NkM2OC41IDUxLjM5IDY0LjEzIDQ3LjAxIDU4Ljc1IDQ3LjAxWk01OC43NSA2My4wMUM1NS4zIDYzLjAxIDUyLjUgNjAuMjEgNTIuNSA1Ni43NkM1Mi41IDUzLjMxIDU1LjMgNTAuNTEgNTguNzUgNTAuNTFDNjIuMiA1MC41MSA2NSA1My4zMSA2NSA1Ni43NkM2NSA2MC4yMSA2Mi4yIDYzLjAxIDU4Ljc1IDYzLjAxWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg=="
+                        alt="Ecran d'ordinateur">
+                </div>
+                <div>
+                    <h4>
+                        JavaScript Algorithms and Data Structures
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        Alors que HTML et CSS contrôlent le contenu et le style d'une page, JavaScript est utilisé pour
+                        la rendre interactive. Dans le cadre du cours JavaScript Algorithm and Data Structures, tu
+                        apprendras les principes fondamentaux de JavaScript, etc....
+                    </p>
+                </div>
+                <div>
+                    <a href="https://online.kadea.co/learn/javascript-algorithms-and-data-structures">Suivre le cours</a>
+                    <a href="https://online.kadea.co/learn/javascript-algorithms-and-data-structures">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDYiIHZpZXdCb3g9IjAgMCA1NiA0NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC42MDE1NjIiIHk9IjEiIHdpZHRoPSI1NC4xOTI4IiBoZWlnaHQ9IjQ0LjExMDQiIHJ4PSI0IiBzdHJva2U9IiNFMzA2MTMiLz4KPHBhdGggZD0iTTI1LjYwMTYgMzNWMTNMMzUuNjAxNiAyM0wyNS42MDE2IDMzWiIgZmlsbD0iI0UzMDYxMyIvPgo8L3N2Zz4K"
+                            alt="Image video">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section> -->
+    <!--section 7-->
+    <section id="contener_background_section7">
+        <section id="contener_flex_section7">
+            <div id="section7_part1_size_text">
+                <h3 class="section7_title3 color_text_one">
+                    Prêt à donner un coup de fouet à ta carrière ?
+                </h3>
+                <a href="https://online.kadea.co/learn/responsive-web-design/" id="section7_button_link"
+                    class="weight_link color_text_one">Commence à apprendre</a>
+            </div>
+            <div id="section7_part2">
+                <img id="section7_part2_size_img"
+                    src="https://online.kadea.co/static/start-coding-illustration-section-a68b81880a3666fe1071c79d4031d9b0.svg"
+                    alt="Image">
+            </div>
+        </section>
+    </section>
+    <!--section footer-->
+    <footer id="contener_background_footer">
+        <div id="contener_footer">
+            <div id="footer_part1_title2">
+                <h2>Nos partenaires</h2>
+            </div>
+            <div id="footer_flex_part2_partenaire">
+                <div class="contener_partner">
+                    <img class="partner_width_img1"
+                        src="https://online.kadea.co/static/giz_logo-a081f4c5068d1d08d4c5d60a644dc3e3.png"
+                        alt="Logo cooperation Allemande">
+                </div>
+                <div class="contener_partner">
+                    <img class="partner_width_img2"
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjMuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA5NzYgMzg3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5NzYgMzg3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0VFMzEyNDt9Cgkuc3Qxe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxnIGlkPSJnMTQyNzgiPgoJPGcgaWQ9ImcxNDI1OCI+CgkJPHBhdGggaWQ9InBhdGgxNDI1NCIgY2xhc3M9InN0MCIgZD0iTTI0OS41LDI1MmMwLDY0LjEtNTEuOSwxMTYtMTE2LDExNmMtNjQuMSwwLTExNi01Mi0xMTYtMTE2czUxLjktMTE2LDExNi0xMTYKCQkJQzE5Ny42LDEzNiwyNDkuNSwxODcuOSwyNDkuNSwyNTIiLz4KCQk8cGF0aCBpZD0icGF0aDE0MjU2IiBjbGFzcz0ic3QxIiBkPSJNMTM0LjQsMzE2LjdjLTMxLjksMC4xLTY1LTI3LjEtNjUuMi03MC44Yy0wLjEtMjguOSwxNS41LTU2LjcsMzUuNC03My4yCgkJCWMxOS40LTE2LjEsNDYuMS0yNi40LDcwLjItMjYuNWMzLjEsMCw2LjQsMC4yLDguNCwwLjljLTIxLjEsNC40LTM3LjksMjQtMzcuOCw0Ni4zYzAsMC43LDAuMSwxLjUsMC4xLDEuOQoJCQljMzUuMyw4LjYsNTEuNCwyOS45LDUxLjUsNTkuNEMxOTcsMjg0LjIsMTczLjcsMzE2LjUsMTM0LjQsMzE2LjciLz4KCTwvZz4KCTxwYXRoIGlkPSJwb2x5Z29uMTQyNjAiIGNsYXNzPSJzdDAiIGQ9Ik0zMTIuMSwyMTUuNGwyMi4yLDU2LjJsMjEuNC01Ni4yaDIyLjFMMzQzLjQsMzAwaC0xOWwtMzUuNC04NC42SDMxMi4xeiIvPgoJPGcgaWQ9ImcxNDI3MCI+CgkJPHBhdGggaWQ9InBhdGgxNDI2MiIgY2xhc3M9InN0MCIgZD0iTTQzOS41LDI1Ny4zYzAtMy41LTAuNC02LjktMS4yLTEwLjFzLTItNS45LTMuNy04LjJzLTMuNi00LjEtNi01LjRjLTIuNC0xLjMtNS4xLTItOC4zLTIKCQkJYy0zLjEsMC01LjksMC43LTguMywyYy0yLjQsMS4zLTQuMywzLjItNiw1LjRjLTEuNywyLjMtMi45LDUtMy43LDguMnMtMS4yLDYuNS0xLjIsMTAuMWMwLDMuNiwwLjQsNywxLjIsMTAuMgoJCQljMC44LDMuMSwyLDUuOSwzLjYsOC4yYzEuNiwyLjQsMy42LDQuMiw2LDUuNWMyLjQsMS4zLDUuMiwyLDguNCwyczUuOS0wLjcsOC4zLTJjMi40LTEuMyw0LjMtMy4yLDYtNS41YzEuNy0yLjQsMi45LTUuMSwzLjctOC4yCgkJCUM0MzkuMSwyNjQuMyw0MzkuNSwyNjAuOSw0MzkuNSwyNTcuMyBNNDYxLDI1Ny40YzAsNS41LTAuOCwxMC45LTIuNSwxNi4yYy0xLjcsNS40LTQuMiwxMC4xLTcuNiwxNC4zYy0zLjMsNC4yLTcuNiw3LjYtMTIuNiwxMC4yCgkJCWMtNS4xLDIuNi0xMSwzLjktMTcuOCwzLjljLTYuOCwwLTEyLjctMS4zLTE3LjgtMy45Yy01LjEtMi42LTkuMy02LTEyLjYtMTAuMmMtMy4zLTQuMi01LjktOS03LjYtMTQuM3MtMi41LTEwLjgtMi41LTE2LjIKCQkJczAuOC0xMC45LDIuNS0xNi4yczQuMi0xMCw3LjYtMTQuMWMzLjMtNC4yLDcuNi03LjUsMTIuNi0xMGM1LjEtMi41LDExLTMuOCwxNy44LTMuOGM2LjgsMCwxMi43LDEuMiwxNy43LDMuOAoJCQljNSwyLjUsOS4yLDUuOSwxMi42LDEwYzMuNCw0LjIsNiw4LjksNy43LDE0LjFTNDYxLDI1MS45LDQ2MSwyNTcuNCIvPgoJCTxwYXRoIGlkPSJwYXRoMTQyNjQiIGNsYXNzPSJzdDAiIGQ9Ik01MjYuNCwyMzRjLTQuMi0xLjctOC4xLTIuNC0xMS43LTIuNGMtMy43LDAtNi45LDAuNy05LjYsMi4xcy00LjksMy4zLTYuNiw1LjcKCQkJYy0xLjgsMi40LTMsNS4xLTMuOSw4LjFjLTAuOSwzLTEuMyw2LjEtMS4zLDkuMmMwLDMuNSwwLjQsNi45LDEuMiwxMC4yYzAuNywzLjIsMS45LDYsMy41LDguNGMxLjYsMi40LDMuNiw0LjMsNiw1LjgKCQkJczUuMiwyLjIsOC41LDIuMmMyLjcsMCw1LjQtMC43LDguMi0yLjJjMi44LTEuNSw0LjgtMy4yLDYtNS4yTDUyNi40LDIzNEw1MjYuNCwyMzR6IE01MjguMSwzMDBsLTAuOS02LjVjLTIsMi4yLTQuNiw0LjItNy45LDUuOQoJCQljLTMuMywxLjctNy4xLDIuNS0xMS41LDIuNWMtNS44LDAtMTEtMS4yLTE1LjQtMy43cy04LjItNS43LTExLjItOS44cy01LjQtOC45LTYuOS0xNC4yYy0xLjYtNS40LTIuNC0xMS0yLjQtMTYuOAoJCQljMC01LjUsMC44LTEwLjksMi40LTE2LjJzNC4xLTEwLDcuNC0xNC4xYzMuMy00LjIsNy41LTcuNSwxMi41LTEwYzUtMi41LDEwLjktMy44LDE3LjctMy44YzQuNCwwLDkuMiwwLjgsMTQuNCwyLjRWMTgzaDIxLjgKCQkJdjExNy4xTDUyOC4xLDMwMEw1MjguMSwzMDB6Ii8+CgkJPHBhdGggaWQ9InBhdGgxNDI2NiIgY2xhc3M9InN0MCIgZD0iTTYwOS40LDI2MC40Yy0yLjQsMC4xLTQuOCwwLjMtNy4yLDAuNmMtMi41LDAuMy00LjgsMC43LTcuMSwxLjJjLTQuNywwLjktOCwyLjUtOS44LDQuOAoJCQljLTEuOCwyLjMtMi43LDQuOC0yLjcsNy41YzAsMi44LDEsNS4xLDMuMSw2LjhjMi4xLDEuNyw1LDIuNSw4LjgsMi41YzIuOCwwLDUuNi0wLjYsOC4yLTEuOGMyLjYtMS4yLDQuOS0yLjYsNi44LTQuNEw2MDkuNCwyNjAuNAoJCQlMNjA5LjQsMjYwLjR6IE02MTEuMiwzMDBsLTAuOS02LjNjLTIuNCwyLjYtNS40LDQuNy05LDYuMWMtMy42LDEuNS03LjYsMi4yLTEyLDIuMmMtMy42LDAtNy4yLTAuNi0xMC41LTEuOAoJCQljLTMuNC0xLjItNi4zLTMtOC45LTUuM3MtNC43LTUuMS02LjMtOC40Yy0xLjYtMy4zLTIuNC03LjEtMi40LTExLjNjMC00LjIsMC44LTcuOSwyLjQtMTEuMmMxLjctMy4yLDMuOS02LDYuNy04LjIKCQkJYzIuOC0yLjIsNi00LjEsOS43LTUuNGMzLjYtMS40LDcuNS0yLjQsMTEuNC0zLjFjMi44LTAuNiw1LjktMSw5LjMtMS4zYzMuMy0wLjMsNi4xLTAuNiw4LjQtMC44di0xLjJjMC00LjctMS4yLTgtMy42LTEwCgkJCWMtMi40LTItNS43LTMtMTAtM2MtMi41LDAtNC44LDAuMy03LjEsMC45Yy0yLjIsMC42LTQuMiwxLjMtNiwyLjJjLTEuOCwwLjktMy4zLDEuOC00LjcsMi42Yy0xLjMsMC45LTIuNCwxLjctMy4zLDIuNGwtNy4yLTE1LjIKCQkJYzAuOS0wLjgsMi40LTEuOCw0LjMtM2MxLjktMS4yLDQuMy0yLjMsNy0zLjRjMi44LTEuMSw1LjktMiw5LjMtMi44YzMuNS0wLjcsNy4yLTEuMiwxMS4yLTEuMmM0LjcsMCw5LDAuNiwxMi44LDEuOAoJCQljMy45LDEuMiw3LjIsMy4xLDEwLDUuOGMyLjgsMi42LDUsNiw2LjYsMTBjMS42LDQsMi40LDguOSwyLjQsMTQuNlYzMDBMNjExLjIsMzAwTDYxMS4yLDMwMHoiLz4KCQk8cGF0aCBpZD0icGF0aDE0MjY4IiBjbGFzcz0ic3QwIiBkPSJNNzE1LjIsMjkyLjRjLTAuOCwwLjYtMi4xLDEuNC0zLjgsMi40Yy0xLjgsMS4xLTMuOSwyLjEtNi42LDNjLTIuNiwxLTUuNywxLjgtOS4xLDIuNQoJCQljLTMuNSwwLjctNy40LDEuMS0xMS45LDEuMWMtNS4xLDAtMTAtMC45LTE0LjctMi42Yy00LjctMS44LTguOS00LjQtMTIuNS04Yy0zLjYtMy42LTYuNi04LjEtOC43LTEzLjYKCQkJYy0yLjItNS40LTMuMi0xMS45LTMuMi0xOS4zYzAtNy40LDEuMS0xMy45LDMuMS0xOS41YzIuMS01LjYsNC45LTEwLjIsOC41LTEzLjljMy42LTMuNyw3LjctNi41LDEyLjQtOC4zczkuNi0yLjcsMTQuNy0yLjcKCQkJYzQuOSwwLDkuMSwwLjYsMTIuOCwxLjljMy42LDEuMyw2LjgsMi45LDkuNSw0LjhzNC44LDQuMSw2LjYsNi40YzEuNywyLjMsMyw0LjUsNC4xLDYuNmwtMTYsMTAuOGMtMS44LTMtMy45LTUuOC02LjYtOC40CgkJCWMtMi42LTIuNi02LTMuOS0xMC4yLTMuOWMtNC43LDAtOC43LDIuMS0xMi4xLDYuMmMtMy40LDQuMS01LjEsMTAuNS01LjEsMTkuMmMwLDguNCwxLjgsMTQuOCw1LjIsMTkuMmMzLjUsNC40LDguNSw2LjYsMTUuMSw2LjYKCQkJYzMuMSwwLDYtMC4zLDguNC0xYzIuNS0wLjYsNC43LTEuNCw2LjYtMi4zYzEuOC0wLjksMy40LTEuOCw0LjYtMi43YzEuMi0wLjksMi4xLTEuNywyLjctMi4zTDcxNS4yLDI5Mi40eiIvPgoJPC9nPgoJPGcgaWQ9ImcxNDI3NiI+CgkJPHBhdGggaWQ9InBhdGgxNDI3MiIgY2xhc3M9InN0MCIgZD0iTTc4MS45LDI1Ny4xYzAtMy41LTAuNC02LjgtMS4yLTEwYy0wLjgtMy4xLTItNS45LTMuNi04LjFjLTEuNi0yLjMtMy42LTQuMS01LjktNS40CgkJCXMtNS4xLTItOC4yLTJjLTMuMSwwLTUuOSwwLjctOC4yLDJjLTIuMywxLjMtNC4zLDMuMS01LjksNS40Yy0xLjYsMi4zLTIuOSw1LTMuNiw4LjFjLTAuOCwzLjEtMS4yLDYuNS0xLjIsMTAKCQkJYzAsMy42LDAuNCw3LDEuMiwxMC4xYzAuOCwzLjEsMiw1LjgsMy42LDguMWMxLjYsMi4zLDMuNiw0LjIsNS45LDUuNWMyLjQsMS4zLDUuMSwyLDguMywyczUuOS0wLjYsOC4yLTJjMi4zLTEuMyw0LjMtMy4yLDUuOS01LjUKCQkJYzEuNi0yLjQsMi45LTUsMy42LTguMUM3ODEuNCwyNjQuMSw3ODEuOSwyNjAuNyw3ODEuOSwyNTcuMSBNODAzLjEsMjU3LjJjMCw1LjQtMC44LDEwLjgtMi41LDE2LjFjLTEuNyw1LjMtNC4yLDEwLTcuNSwxNC4yCgkJCWMtMy4zLDQuMi03LjUsNy42LTEyLjYsMTAuMXMtMTAuOSwzLjgtMTcuNywzLjhjLTYuNywwLTEyLjYtMS4zLTE3LjctMy44Yy01LjEtMi41LTkuMi01LjktMTIuNi0xMC4xYy0zLjMtNC4yLTUuOC04LjktNy41LTE0LjIKCQkJYy0xLjctNS4zLTIuNS0xMC43LTIuNS0xNi4xYzAtNS40LDAuOC0xMC44LDIuNS0xNmMxLjctNS4yLDQuMi05LjksNy41LTE0YzMuMy00LjEsNy41LTcuNCwxMi42LTkuOWM1LjEtMi41LDEwLjktMy43LDE3LjctMy43CgkJCWM2LjcsMCwxMi42LDEuMiwxNy42LDMuN2M1LDIuNSw5LjIsNS44LDEyLjYsOS45YzMuNCw0LjEsNS45LDguOCw3LjYsMTRDODAyLjMsMjQ2LjQsODAzLjEsMjUxLjcsODAzLjEsMjU3LjIiLz4KCQk8cGF0aCBpZD0icGF0aDE0Mjc0IiBjbGFzcz0ic3QwIiBkPSJNOTE4LjksMjk5LjV2LTQ5LjNjMC01LjYtMS4xLTEwLjEtMy4xLTEzLjVjLTIuMS0zLjQtNi01LjEtMTEuNy01LjFjLTEuNiwwLTMuMywwLjMtNSwwLjgKCQkJYy0xLjcsMC41LTMuMywxLjEtNC44LDEuOGMtMS41LDAuNy0yLjksMS40LTQsMi4ycy0yLjEsMS40LTIuOCwyYzAuMiwxLjQsMC41LDMsMC43LDQuN2MwLjIsMS44LDAuNCwzLjYsMC40LDUuOHY1MC43SDg2N3YtNDkuMwoJCQljMC0yLjUtMC4yLTUtMC42LTcuMmMtMC40LTIuMy0xLjItNC4yLTIuMi01LjljLTEuMS0xLjctMi40LTMtNC4xLTRjLTEuNy0xLTMuOC0xLjUtNi40LTEuNWMtMy4zLDAtNi4zLDAuOS05LjIsMi42CgkJCWMtMi45LDEuOC01LjQsMy42LTcuMyw1LjZ2NTkuOGgtMjEuNnYtODRoMTkuOGwwLjksNi4zYzIuNi0yLjMsNS43LTQuMyw5LjUtNS45YzMuOC0xLjYsNy42LTIuNCwxMS40LTIuNGM0LDAsNy45LDAuNiwxMS44LDEuOAoJCQljMy45LDEuMiw3LjUsMy4zLDEwLjksNi40YzMuOC0yLjMsOC4xLTQuMywxMi42LTUuOWM0LjYtMS42LDkuNS0yLjQsMTQuOC0yLjRjNi4zLDAsMTEuNSwwLjgsMTUuOCwyLjRzNy43LDQsMTAuMiw3CgkJCWMyLjYsMyw0LjQsNi43LDUuNSwxMS4yYzEuMSw0LjQsMS43LDkuNSwxLjcsMTUuMnY1MC40TDkxOC45LDI5OS41TDkxOC45LDI5OS41eiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo="
+                        alt="Logo Vodacom">
+                </div>
+                <div class="contener_partner">
+                    <img class="partner_width_img3"
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzMDQgMTgyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDQgMTgyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzI1MkYzRTt9Cgkuc3Qxe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6I0ZGOTkwMDt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTg2LjQsNjYuNGMwLDMuNywwLjQsNi43LDEuMSw4LjljMC44LDIuMiwxLjgsNC42LDMuMiw3LjJjMC41LDAuOCwwLjcsMS42LDAuNywyLjNjMCwxLTAuNiwyLTEuOSwzbC02LjMsNC4yCgkJYy0wLjksMC42LTEuOCwwLjktMi42LDAuOWMtMSwwLTItMC41LTMtMS40Qzc2LjIsOTAsNzUsODguNCw3NCw4Ni44Yy0xLTEuNy0yLTMuNi0zLjEtNS45Yy03LjgsOS4yLTE3LjYsMTMuOC0yOS40LDEzLjgKCQljLTguNCwwLTE1LjEtMi40LTIwLTcuMmMtNC45LTQuOC03LjQtMTEuMi03LjQtMTkuMmMwLTguNSwzLTE1LjQsOS4xLTIwLjZjNi4xLTUuMiwxNC4yLTcuOCwyNC41LTcuOGMzLjQsMCw2LjksMC4zLDEwLjYsMC44CgkJYzMuNywwLjUsNy41LDEuMywxMS41LDIuMnYtNy4zYzAtNy42LTEuNi0xMi45LTQuNy0xNmMtMy4yLTMuMS04LjYtNC42LTE2LjMtNC42Yy0zLjUsMC03LjEsMC40LTEwLjgsMS4zYy0zLjcsMC45LTcuMywyLTEwLjgsMy40CgkJYy0xLjYsMC43LTIuOCwxLjEtMy41LDEuM2MtMC43LDAuMi0xLjIsMC4zLTEuNiwwLjNjLTEuNCwwLTIuMS0xLTIuMS0zLjF2LTQuOWMwLTEuNiwwLjItMi44LDAuNy0zLjVjMC41LTAuNywxLjQtMS40LDIuOC0yLjEKCQljMy41LTEuOCw3LjctMy4zLDEyLjYtNC41YzQuOS0xLjMsMTAuMS0xLjksMTUuNi0xLjljMTEuOSwwLDIwLjYsMi43LDI2LjIsOC4xYzUuNSw1LjQsOC4zLDEzLjYsOC4zLDI0LjZWNjYuNHogTTQ1LjgsODEuNgoJCWMzLjMsMCw2LjctMC42LDEwLjMtMS44YzMuNi0xLjIsNi44LTMuNCw5LjUtNi40YzEuNi0xLjksMi44LTQsMy40LTYuNGMwLjYtMi40LDEtNS4zLDEtOC43di00LjJjLTIuOS0wLjctNi0xLjMtOS4yLTEuNwoJCWMtMy4yLTAuNC02LjMtMC42LTkuNC0wLjZjLTYuNywwLTExLjYsMS4zLTE0LjksNGMtMy4zLDIuNy00LjksNi41LTQuOSwxMS41YzAsNC43LDEuMiw4LjIsMy43LDEwLjYKCQlDMzcuNyw4MC40LDQxLjIsODEuNiw0NS44LDgxLjZ6IE0xMjYuMSw5Mi40Yy0xLjgsMC0zLTAuMy0zLjgtMWMtMC44LTAuNi0xLjUtMi0yLjEtMy45TDk2LjcsMTAuMmMtMC42LTItMC45LTMuMy0wLjktNAoJCWMwLTEuNiwwLjgtMi41LDIuNC0yLjVoOS44YzEuOSwwLDMuMiwwLjMsMy45LDFjMC44LDAuNiwxLjQsMiwyLDMuOWwxNi44LDY2LjJsMTUuNi02Ni4yYzAuNS0yLDEuMS0zLjMsMS45LTMuOWMwLjgtMC42LDIuMi0xLDQtMQoJCWg4YzEuOSwwLDMuMiwwLjMsNCwxYzAuOCwwLjYsMS41LDIsMS45LDMuOWwxNS44LDY3bDE3LjMtNjdjMC42LTIsMS4zLTMuMywyLTMuOWMwLjgtMC42LDIuMS0xLDMuOS0xaDkuM2MxLjYsMCwyLjUsMC44LDIuNSwyLjUKCQljMCwwLjUtMC4xLDEtMC4yLDEuNmMtMC4xLDAuNi0wLjMsMS40LTAuNywyLjVsLTI0LjEsNzcuM2MtMC42LDItMS4zLDMuMy0yLjEsMy45Yy0wLjgsMC42LTIuMSwxLTMuOCwxaC04LjZjLTEuOSwwLTMuMi0wLjMtNC0xCgkJYy0wLjgtMC43LTEuNS0yLTEuOS00TDE1NiwyM2wtMTUuNCw2NC40Yy0wLjUsMi0xLjEsMy4zLTEuOSw0Yy0wLjgsMC43LTIuMiwxLTQsMUgxMjYuMXogTTI1NC42LDk1LjFjLTUuMiwwLTEwLjQtMC42LTE1LjQtMS44CgkJYy01LTEuMi04LjktMi41LTExLjUtNGMtMS42LTAuOS0yLjctMS45LTMuMS0yLjhjLTAuNC0wLjktMC42LTEuOS0wLjYtMi44di01LjFjMC0yLjEsMC44LTMuMSwyLjMtMy4xYzAuNiwwLDEuMiwwLjEsMS44LDAuMwoJCWMwLjYsMC4yLDEuNSwwLjYsMi41LDFjMy40LDEuNSw3LjEsMi43LDExLDMuNWM0LDAuOCw3LjksMS4yLDExLjksMS4yYzYuMywwLDExLjItMS4xLDE0LjYtMy4zYzMuNC0yLjIsNS4yLTUuNCw1LjItOS41CgkJYzAtMi44LTAuOS01LjEtMi43LTdjLTEuOC0xLjktNS4yLTMuNi0xMC4xLTUuMkwyNDYsNTJjLTcuMy0yLjMtMTIuNy01LjctMTYtMTAuMmMtMy4zLTQuNC01LTkuMy01LTE0LjVjMC00LjIsMC45LTcuOSwyLjctMTEuMQoJCWMxLjgtMy4yLDQuMi02LDcuMi04LjJjMy0yLjMsNi40LTQsMTAuNC01LjJjNC0xLjIsOC4yLTEuNywxMi42LTEuN2MyLjIsMCw0LjUsMC4xLDYuNywwLjRjMi4zLDAuMyw0LjQsMC43LDYuNSwxLjEKCQljMiwwLjUsMy45LDEsNS43LDEuNmMxLjgsMC42LDMuMiwxLjIsNC4yLDEuOGMxLjQsMC44LDIuNCwxLjYsMywyLjVjMC42LDAuOCwwLjksMS45LDAuOSwzLjN2NC43YzAsMi4xLTAuOCwzLjItMi4zLDMuMgoJCWMtMC44LDAtMi4xLTAuNC0zLjgtMS4yYy01LjctMi42LTEyLjEtMy45LTE5LjItMy45Yy01LjcsMC0xMC4yLDAuOS0xMy4zLDIuOGMtMy4xLDEuOS00LjcsNC44LTQuNyw4LjljMCwyLjgsMSw1LjIsMyw3LjEKCQljMiwxLjksNS43LDMuOCwxMSw1LjVsMTQuMiw0LjVjNy4yLDIuMywxMi40LDUuNSwxNS41LDkuNmMzLjEsNC4xLDQuNiw4LjgsNC42LDE0YzAsNC4zLTAuOSw4LjItMi42LDExLjYKCQljLTEuOCwzLjQtNC4yLDYuNC03LjMsOC44Yy0zLjEsMi41LTYuOCw0LjMtMTEuMSw1LjZDMjY0LjQsOTQuNCwyNTkuNyw5NS4xLDI1NC42LDk1LjF6Ii8+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjczLjUsMTQzLjdjLTMyLjksMjQuMy04MC43LDM3LjItMTIxLjgsMzcuMmMtNTcuNiwwLTEwOS41LTIxLjMtMTQ4LjctNTYuN2MtMy4xLTIuOC0wLjMtNi42LDMuNC00LjQKCQkJYzQyLjQsMjQuNiw5NC43LDM5LjUsMTQ4LjgsMzkuNWMzNi41LDAsNzYuNi03LjYsMTEzLjUtMjMuMkMyNzQuMiwxMzMuNiwyNzguOSwxMzkuNywyNzMuNSwxNDMuN3oiLz4KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjg3LjIsMTI4LjFjLTQuMi01LjQtMjcuOC0yLjYtMzguNS0xLjNjLTMuMiwwLjQtMy43LTIuNC0wLjgtNC41YzE4LjgtMTMuMiw0OS43LTkuNCw1My4zLTUKCQkJYzMuNiw0LjUtMSwzNS40LTE4LjYsNTAuMmMtMi43LDIuMy01LjMsMS4xLTQuMS0xLjlDMjgyLjUsMTU1LjcsMjkxLjQsMTMzLjQsMjg3LjIsMTI4LjF6Ii8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg=="
+                        alt="Logo Rawbank">
+                </div>
+            </div>
+            <div id="footer_logo">
+                <a href="https://online.kadea.co/"><img id="footer_size_logo"
+                        src="https://online.kadea.co/static/kadea-learn-ligth-cb93ac62a82b3c8b6a58bbd1729996ef.svg"
+                        alt="Logo KADEA"></a>
+            </div>
+            <div id="footer_reference">
+                <a href="https://www.facebook.com/kda243"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANlSURBVHgBzZlLTBNBGMf/M/sQg8EVPFrd3hW5m0h71IPgTQ+EmJB4UcGLN0Mb9UI8qPHgwQQIBz0SD16pJni1Re4tlCOQhfii+xhnFrdp2bawD+j+kk1npjM7/8w3j2++JQhJGZomqVIGjAxT4miMEZ0Q6AzEAGMGCAwHrERAinbNLqRhGAgBCVLZFaVIo7zROG+ZCdIWDAUGzF80t+aCNDuywKrSP8mr53gLDRHgHVYchvxRhR4qcAPaEFPlWT4EQ4gRIdSs2Vlu+kqnerTTn2LUmCp9j1ucgJtbl1WpXFX7pzvVayuwqp6fBiGvcOyQXCeRLU3sigPL4URhuVRtO3+w1CewO+I8/CKbBFZlLQMqLaGbOHY2ZRkFL9s0BwmVZtFlhAax33r5ukBhWrGy0GWEBqrSKS/vmpgr1hVVWopD4Knr19yHamfhGDswV1bx59NnBMSwanZaHI+yyPHjKxOHuHPv36J37E5TmbW2Hkag5o5iDTnXxJRgGhHpHbvrExcFCWRc/MobCj/KYhi9M4/uN+V/L3yEVVmHs7ODMAhNZa5NtkEzFNFRBi/X08Kk2xMPEBVKuTZKyDBixiytIg4khquUO5c6EgvJiFWsIyTayxd8O+nzlZ8euQFZT7npvS/f8GvhA8LA56Emc48ltAPac+sm5EspX7kyeMV9BFalighocayPjtQizkd5/4ITbhR/vnnnnhiCvqdP6uV7X5e5aZfdtLXyA1EgG+pAOY598MLeZj29+2wGu89nEBnGipSLKyKxEIM6jK0hoThAiVJGF5FQKLMXqWVZRXehJA9DeNZU+Fx8KOeRMLij6lp2391KoJlNaruXJ9dhTVmbhaoyUAgcb2lge+JhPW2VIu59wFz6737EoX6rK/douuxIZSQAi3J3/7/A+lEnCghhj9F1WN4TJ/Bf3JWBpSimjgQP0aXMrWxjkc9ZsEz7NgGr4IQRfVqSfe9guU+g2HZM6mRPUqToS/TZaFqPlu6WqCgaiMMaxw4rthMnODSAySMOOf6SyNfSljC85nNuqlOVI4WAxRakOJRHHoiOOOCLgQff82L/PaxqoCD6ujQwSigmQ6/yAMI8Agn0ECMq2VKGf3YYcW+FhAy1eXmFqyrYDCWn15lLG8E/RYQS2AohujHfbtIH5R8A/0345sKoQwAAAABJRU5ErkJggg=="
+                        alt="Logo Facebook"></a>
+                <a href="https://www.instagram.com/kinshasadigitalacademy/"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASLSURBVHgBzVk/bFtFGP/dvedX00a16xS64NZhgKW0KSOViDN0ANS0SAzt0KJKlDKkpAi2DnEELMBQ1A5UQmooAwwMhaELQwwSCwtx291OHKRKrcNzCH9q+73j+655rl3/yTs7ifuLnvLufJ/vl+//XQR6RB7xuOVYaSgxJoUfV0qkhEBKQbhQyoWA60PlBMS8V/GyI3Bd9ABhsliTiljHSegtkkybyEIhq4Cv91ZLsyZioQkWI4kpWp4hiTj6AG1Y8BVmwhJdl+AS4qPKsa+RCkaxgWCi1Yo3TqYvdFsnu33IWlOO9ftGk2OQuVO2Y+WLTmK627qOBIvO7mkIcQmbDpHpRrKtiTU5qAy2FCqTrCzPPD7bQnAw5AK0kmwiWLTjaUhrDoOE740na242GDb5oJDWNQwYzIHzbTCuE2TTcmRhwGAO0pEXgrE2MTFORRxr7kkguAa3VvFGuDzaPKLyle6FXOTgfkQOvNjxc1Uuw3fLePDLrzBEXGuxgozW4JIznDch6BzYj8T312Hv2xtqfW1hEfePHKPfRYQFV5pnK6URsRShUia4WoSDvS+JZ37Lwlsswv3gIqq3bpOWVtqulfGdWsOJr65AxHbi7gsvaY2GRU15h6QHmYYBhs6/S6ZbQenNU9p0ncgxtp86iR2nT+LekQnt7EOT52ACKWXalkKMmQix31Vyt1vMte2Vw3hq4jX9zsT//fEmojQXpTn3w4t6jmVNYCkctKm5TFHNDS9EflfN3Wyae/qnHzRBJm3FYqTlc5rg8tnzwNlJrWV+nLGXYQaR5jyYgiEa/Sj++Sea3D0KgrvPH8Ife57TGmNtskkDF/DL4X0vgOJoJu311YBGJ17FP99815RKVi9f1Q9rEm3+KAPEJfoEp5oHP7fmuUruDkVxrGldL5D6gNMHFGlm29jhlnkOEK8hkDgX9gIKYtEXwfLHn1I6OdFkTn7ffvoE/r7+7aONGrQZGkrN2+SI8zAMlMbN2NfYfBws/DTOrxD5ugxFt+qSM9tDuLav1II0SDMemcqiatIIjtrVy18ievRhHqzeutNSf61U0jhQfCBnSyVvQKipsEIcEGxCLnm1Jh8rYvXK1bYyvJZT0fLbkzCBVN4Nwc2hHZH5sOmGzbuHarGin78++gwVqsWqi2aiR1/H0HvvUKkTuuQZNAxuslLapW27EElcIjOH1iJrZBc1AKyVMGCt/0kVxbCbmaVu5owmWLR301lEGZ9FmKi1lt9YsyL2KHi8tbTSrdvphpqkhvU/t1CPjmJkeM74vmWTEGiP3+uVpGZ5Z/CEoCq9+tGzTlCrU6j3MXCoGeYSjFoP7oM0NV3RJaul8caplmahVvXeEFAFbDF4z3Zu1kKQj3pV6Y9vJUnei/dsNG2Atu0WL2QBLtbYdKj5TuQY6xZhunHI0JdMYzOg8AX53IVuS0J1Cfko3Tz4km4eRAobAQoGunyfSdbuZ9dbanSJvmgNHxcSUz1HuQGxAEYEA7BGLc9KU5d2bO1UONrhywvEKusp5Pwd/uyIa/6viJ4ItgOTbhx3cnpT/A9fGuIyrCm0KwAAAABJRU5ErkJggg=="
+                        alt="Logo Instagram"></a>
+                <a href="https://www.twitter.com/kda243"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQSSURBVHgBzZk9bBxVEMf/8/YDRJC9+AJCiEvODVVEkoYCJHwu0pJQpoAoEogCkIOEQgGRz0IUSBRBVFQxSQESFCEIKCh8QQoFjX2QCgnZzkVKosTWXpQP5+52X2Y22dPZ9/XexvH51+zt3sztX/Nm5n0cISOLCALHd4rQNKEoDrSmAhEKGhRC6xCEMIauEGghqkflcYQhMkA2xokozznETkfYs2jjC42yBr7b1ViZtXEzFlj1xqbYvMQeAR4BfuFSrDFjKnSgwMsI9mnfPcUh2IdNRIQ26tEkD/1SPzvV70uJmvad+c0WJ/BwF1zfWaz6Y9P97HoKrPo7p0F0Eo8dKvUT2XWIE3HQJWwpupSvr85sfNohcDjiUjpFrhNYdYMilDOHYRJHk/lmWE5v1+UgKecUhoxokH6b3rcEytBKZWHIiAblq2PpfTLErLjg+c7cdhD4kLBZj8ZlekwiyNNXcRuJE4I0iolARZg29VTByECbJ15/Dc/+8TOe/28euR9Pw9u7p+Xr7s7DBAd0RK502eOpjGS2GIz8eO6nM7h+4CDisNbV5ukP30Pw1Rcdzxv/XIQaHcW1VybY9yZMaOpov4qgijDE2b0L3st78Nzfcz0jIQK7IX71yr946q3DMEUpVVSKaMLUIVq+lFxdFirDN3Li+DqhMrTyXS8alYu49c23MMXR2Eu8IJjnOdd4MSC5JULauffnBdw7fyHpCSOfHe/pe/Wl/WguV2GKrHhcWFSvz8MkQjYKlPuNz7oR18xyL4U7S0BVP6dNHVQwiheu/Y8sRBy5KxxBW5SNsVSuTQ61I2mQBffBBoeMl/Hhx58mQne8fZir2qynCbdPf48scBGT9W7L58ZrI+7uud+yRVDrBcUJuABLJIqRYTVqbso1ts8GhSrWehmWSKu4fuANrL7zAQuo9bVdffd9q9bSTgxUlNLqLCyROVVmFclD4sruhkROpsS7535HVpSOzpIsDl1PLZoUivS6kROf8PXVvnZ3zvyAm59/mTlyDwnz9ZVnkvXgsjd2kqtlytQzbcxSLBJBGea4VsPa+b+w9suvxouBfrCw2RfrK0cTgVV3J+9F9HD3IhtoKl6wroVLSaPON2+U5ewE2wSJnoiTz62ZpOlER7FNaKiotfVsCRTFRPojDB09k0ZP6Ny4e7k566O1zYLTLN9YmWx/1LFYaDaiNwl6CVuMvLNbmnUIlK1eQ8WTWylS3iXvbB/alK7LLTEUB5ms8djRC73ECQMPMPnEocQ/YrwttULja865Y/1MjI6AF5/kk4dY8ckDFbAZSM/VNJP03wFYHaJfcnKHSGEqc5VbCEuxEpgiEXUip8h/OxzkPC302hXKroxVlSONSrwjnh0P7f+KyCSwGyK6/b5X0ttyHyELkgQWepHsAAAAAElFTkSuQmCC"
+                        alt="Logo Twitter"></a>
+            </div>
+            <div id="footer_text_copyright">
+                <p>Kadea Online © 2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
